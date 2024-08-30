@@ -10,23 +10,29 @@ import slid5 from '../../assets/home/slide5.jpg'
 const Category = () => {
     return (
         <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper mt-48 mb-48"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+            <img src={slid1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slid2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slid3} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slid4} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slid5} alt="" />
+        </SwiperSlide>
       </Swiper>
     );
 };
